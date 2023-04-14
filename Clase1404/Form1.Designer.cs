@@ -37,6 +37,9 @@
             this.label5 = new System.Windows.Forms.Label();
             this.lblTotal = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtGastoFijo = new System.Windows.Forms.TextBox();
             this.cmdCancelar = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.txtComida = new System.Windows.Forms.TextBox();
@@ -45,14 +48,11 @@
             this.txtAlquiler = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txtGastoFijo = new System.Windows.Forms.TextBox();
             this.txtDeposito = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // cmdGrabar
@@ -142,6 +142,37 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Saldo";
             // 
+            // groupBox4
+            // 
+            this.groupBox4.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.groupBox4.Controls.Add(this.label6);
+            this.groupBox4.Controls.Add(this.txtGastoFijo);
+            this.groupBox4.ForeColor = System.Drawing.Color.Blue;
+            this.groupBox4.Location = new System.Drawing.Point(40, 344);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(304, 100);
+            this.groupBox4.TabIndex = 18;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Gastos fijos";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(17, 50);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(88, 16);
+            this.label6.TabIndex = 2;
+            this.label6.Text = "Deposito $";
+            // 
+            // txtGastoFijo
+            // 
+            this.txtGastoFijo.BackColor = System.Drawing.Color.Lime;
+            this.txtGastoFijo.Location = new System.Drawing.Point(117, 47);
+            this.txtGastoFijo.Name = "txtGastoFijo";
+            this.txtGastoFijo.Size = new System.Drawing.Size(181, 23);
+            this.txtGastoFijo.TabIndex = 12;
+            // 
             // cmdCancelar
             // 
             this.cmdCancelar.BackColor = System.Drawing.Color.Blue;
@@ -225,37 +256,6 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Ingresos";
             // 
-            // groupBox4
-            // 
-            this.groupBox4.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.groupBox4.Controls.Add(this.label6);
-            this.groupBox4.Controls.Add(this.txtGastoFijo);
-            this.groupBox4.ForeColor = System.Drawing.Color.Blue;
-            this.groupBox4.Location = new System.Drawing.Point(40, 344);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(304, 100);
-            this.groupBox4.TabIndex = 18;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Gastos fijos";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(17, 50);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(88, 16);
-            this.label6.TabIndex = 2;
-            this.label6.Text = "Deposito $";
-            // 
-            // txtGastoFijo
-            // 
-            this.txtGastoFijo.BackColor = System.Drawing.Color.Lime;
-            this.txtGastoFijo.Location = new System.Drawing.Point(117, 47);
-            this.txtGastoFijo.Name = "txtGastoFijo";
-            this.txtGastoFijo.Size = new System.Drawing.Size(181, 23);
-            this.txtGastoFijo.TabIndex = 12;
-            // 
             // txtDeposito
             // 
             this.txtDeposito.BackColor = System.Drawing.Color.Lime;
@@ -274,6 +274,7 @@
             this.ClientSize = new System.Drawing.Size(478, 645);
             this.Controls.Add(this.groupBox1);
             this.DoubleBuffered = true;
+            this.ForeColor = System.Drawing.Color.Transparent;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "frmPrincipal";
@@ -281,12 +282,12 @@
             this.Text = "Gestion de Gastos Mensuales";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
             this.ResumeLayout(false);
 
         }
