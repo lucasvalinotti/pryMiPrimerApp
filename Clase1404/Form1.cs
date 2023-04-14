@@ -10,11 +10,19 @@ using System.Windows.Forms;
 
 namespace Clase1404
 {
-    public partial class Form1 : Form
+    public partial class frmPrincipal : Form
     {
-        public Form1()
+        public frmPrincipal()
         {
             InitializeComponent();
+        }
+
+        private void cmdGrabar_Click(object sender, EventArgs e)
+        {
+            float total = float.Parse(txtDeposito.Text) - (float.Parse(txtAlquiler.Text) + float.Parse(txtImpuestos.Text) +
+                float.Parse(txtSalidas.Text) + float.Parse(txtComida.Text) + float.Parse(txtGastoFijo.Text));
+
+            lblTotal.Text = total.ToString();
         }
     }
 }
