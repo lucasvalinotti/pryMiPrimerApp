@@ -36,29 +36,30 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.lblTotal = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.mrcSaldo = new System.Windows.Forms.GroupBox();
+            this.mrcGastosFijos = new System.Windows.Forms.GroupBox();
             this.label6 = new System.Windows.Forms.Label();
             this.txtGastoFijo = new System.Windows.Forms.TextBox();
             this.cmdCancelar = new System.Windows.Forms.Button();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.mrcEgresos = new System.Windows.Forms.GroupBox();
             this.txtComida = new System.Windows.Forms.TextBox();
             this.txtSalidas = new System.Windows.Forms.TextBox();
             this.txtImpuestos = new System.Windows.Forms.TextBox();
             this.txtAlquiler = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.mrcIngresos = new System.Windows.Forms.GroupBox();
             this.txtDeposito = new System.Windows.Forms.TextBox();
-            this.groupBox1.SuspendLayout();
-            this.groupBox4.SuspendLayout();
-            this.groupBox3.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            this.mrcSaldo.SuspendLayout();
+            this.mrcGastosFijos.SuspendLayout();
+            this.mrcEgresos.SuspendLayout();
+            this.mrcIngresos.SuspendLayout();
             this.SuspendLayout();
             // 
             // cmdGrabar
             // 
-            this.cmdGrabar.BackColor = System.Drawing.Color.Blue;
+            this.cmdGrabar.BackColor = System.Drawing.Color.LightSteelBlue;
             this.cmdGrabar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cmdGrabar.ForeColor = System.Drawing.Color.Black;
             this.cmdGrabar.Location = new System.Drawing.Point(57, 471);
             this.cmdGrabar.Name = "cmdGrabar";
             this.cmdGrabar.Size = new System.Drawing.Size(93, 33);
@@ -106,7 +107,8 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.IndianRed;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.ForeColor = System.Drawing.Color.Black;
             this.label5.Location = new System.Drawing.Point(128, 535);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(65, 16);
@@ -116,58 +118,59 @@
             // lblTotal
             // 
             this.lblTotal.AutoSize = true;
-            this.lblTotal.BackColor = System.Drawing.Color.IndianRed;
+            this.lblTotal.BackColor = System.Drawing.Color.Transparent;
+            this.lblTotal.ForeColor = System.Drawing.Color.Black;
             this.lblTotal.Location = new System.Drawing.Point(199, 535);
             this.lblTotal.Name = "lblTotal";
             this.lblTotal.Size = new System.Drawing.Size(63, 16);
             this.lblTotal.TabIndex = 10;
             this.lblTotal.Text = "________";
             // 
-            // groupBox1
+            // mrcSaldo
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox1.Controls.Add(this.groupBox4);
-            this.groupBox1.Controls.Add(this.cmdCancelar);
-            this.groupBox1.Controls.Add(this.groupBox3);
-            this.groupBox1.Controls.Add(this.lblTotal);
-            this.groupBox1.Controls.Add(this.groupBox2);
-            this.groupBox1.Controls.Add(this.cmdGrabar);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Font = new System.Drawing.Font("Perpetua Titling MT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.ForeColor = System.Drawing.Color.White;
-            this.groupBox1.Location = new System.Drawing.Point(48, 45);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(382, 562);
-            this.groupBox1.TabIndex = 11;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Saldo";
+            this.mrcSaldo.BackColor = System.Drawing.Color.Transparent;
+            this.mrcSaldo.Controls.Add(this.mrcGastosFijos);
+            this.mrcSaldo.Controls.Add(this.cmdCancelar);
+            this.mrcSaldo.Controls.Add(this.mrcEgresos);
+            this.mrcSaldo.Controls.Add(this.lblTotal);
+            this.mrcSaldo.Controls.Add(this.mrcIngresos);
+            this.mrcSaldo.Controls.Add(this.cmdGrabar);
+            this.mrcSaldo.Controls.Add(this.label5);
+            this.mrcSaldo.Font = new System.Drawing.Font("Perpetua Titling MT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mrcSaldo.ForeColor = System.Drawing.Color.Black;
+            this.mrcSaldo.Location = new System.Drawing.Point(12, 12);
+            this.mrcSaldo.Name = "mrcSaldo";
+            this.mrcSaldo.Size = new System.Drawing.Size(382, 562);
+            this.mrcSaldo.TabIndex = 11;
+            this.mrcSaldo.TabStop = false;
+            this.mrcSaldo.Text = "Saldo";
             // 
-            // groupBox4
+            // mrcGastosFijos
             // 
-            this.groupBox4.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.groupBox4.Controls.Add(this.label6);
-            this.groupBox4.Controls.Add(this.txtGastoFijo);
-            this.groupBox4.ForeColor = System.Drawing.Color.Blue;
-            this.groupBox4.Location = new System.Drawing.Point(40, 344);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(304, 100);
-            this.groupBox4.TabIndex = 18;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Gastos fijos";
+            this.mrcGastosFijos.BackColor = System.Drawing.Color.Transparent;
+            this.mrcGastosFijos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.mrcGastosFijos.Controls.Add(this.label6);
+            this.mrcGastosFijos.Controls.Add(this.txtGastoFijo);
+            this.mrcGastosFijos.ForeColor = System.Drawing.Color.Black;
+            this.mrcGastosFijos.Location = new System.Drawing.Point(40, 344);
+            this.mrcGastosFijos.Name = "mrcGastosFijos";
+            this.mrcGastosFijos.Size = new System.Drawing.Size(304, 100);
+            this.mrcGastosFijos.TabIndex = 18;
+            this.mrcGastosFijos.TabStop = false;
+            this.mrcGastosFijos.Text = "Gastos fijos";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(17, 50);
+            this.label6.Location = new System.Drawing.Point(33, 50);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(88, 16);
+            this.label6.Size = new System.Drawing.Size(72, 16);
             this.label6.TabIndex = 2;
-            this.label6.Text = "Deposito $";
+            this.label6.Text = "Gastos $";
             // 
             // txtGastoFijo
             // 
-            this.txtGastoFijo.BackColor = System.Drawing.Color.Lime;
+            this.txtGastoFijo.BackColor = System.Drawing.Color.White;
             this.txtGastoFijo.Location = new System.Drawing.Point(117, 47);
             this.txtGastoFijo.Name = "txtGastoFijo";
             this.txtGastoFijo.Size = new System.Drawing.Size(181, 23);
@@ -175,8 +178,9 @@
             // 
             // cmdCancelar
             // 
-            this.cmdCancelar.BackColor = System.Drawing.Color.Blue;
+            this.cmdCancelar.BackColor = System.Drawing.Color.LightSteelBlue;
             this.cmdCancelar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cmdCancelar.ForeColor = System.Drawing.Color.Black;
             this.cmdCancelar.Location = new System.Drawing.Point(220, 471);
             this.cmdCancelar.Name = "cmdCancelar";
             this.cmdCancelar.Size = new System.Drawing.Size(93, 33);
@@ -184,28 +188,28 @@
             this.cmdCancelar.Text = "Cancelar";
             this.cmdCancelar.UseVisualStyleBackColor = false;
             // 
-            // groupBox3
+            // mrcEgresos
             // 
-            this.groupBox3.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox3.Controls.Add(this.txtComida);
-            this.groupBox3.Controls.Add(this.label2);
-            this.groupBox3.Controls.Add(this.txtSalidas);
-            this.groupBox3.Controls.Add(this.label3);
-            this.groupBox3.Controls.Add(this.txtImpuestos);
-            this.groupBox3.Controls.Add(this.label4);
-            this.groupBox3.Controls.Add(this.txtAlquiler);
-            this.groupBox3.Controls.Add(this.label7);
-            this.groupBox3.ForeColor = System.Drawing.Color.Blue;
-            this.groupBox3.Location = new System.Drawing.Point(40, 151);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(304, 187);
-            this.groupBox3.TabIndex = 18;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Egresos";
+            this.mrcEgresos.BackColor = System.Drawing.Color.Transparent;
+            this.mrcEgresos.Controls.Add(this.txtComida);
+            this.mrcEgresos.Controls.Add(this.label2);
+            this.mrcEgresos.Controls.Add(this.txtSalidas);
+            this.mrcEgresos.Controls.Add(this.label3);
+            this.mrcEgresos.Controls.Add(this.txtImpuestos);
+            this.mrcEgresos.Controls.Add(this.label4);
+            this.mrcEgresos.Controls.Add(this.txtAlquiler);
+            this.mrcEgresos.Controls.Add(this.label7);
+            this.mrcEgresos.ForeColor = System.Drawing.Color.Black;
+            this.mrcEgresos.Location = new System.Drawing.Point(40, 151);
+            this.mrcEgresos.Name = "mrcEgresos";
+            this.mrcEgresos.Size = new System.Drawing.Size(304, 187);
+            this.mrcEgresos.TabIndex = 18;
+            this.mrcEgresos.TabStop = false;
+            this.mrcEgresos.Text = "Egresos";
             // 
             // txtComida
             // 
-            this.txtComida.BackColor = System.Drawing.Color.Lime;
+            this.txtComida.BackColor = System.Drawing.Color.White;
             this.txtComida.Location = new System.Drawing.Point(117, 143);
             this.txtComida.Name = "txtComida";
             this.txtComida.Size = new System.Drawing.Size(181, 23);
@@ -213,7 +217,7 @@
             // 
             // txtSalidas
             // 
-            this.txtSalidas.BackColor = System.Drawing.Color.Lime;
+            this.txtSalidas.BackColor = System.Drawing.Color.White;
             this.txtSalidas.Location = new System.Drawing.Point(116, 112);
             this.txtSalidas.Name = "txtSalidas";
             this.txtSalidas.Size = new System.Drawing.Size(181, 23);
@@ -221,7 +225,7 @@
             // 
             // txtImpuestos
             // 
-            this.txtImpuestos.BackColor = System.Drawing.Color.Lime;
+            this.txtImpuestos.BackColor = System.Drawing.Color.White;
             this.txtImpuestos.Location = new System.Drawing.Point(117, 77);
             this.txtImpuestos.Name = "txtImpuestos";
             this.txtImpuestos.Size = new System.Drawing.Size(181, 23);
@@ -229,7 +233,7 @@
             // 
             // txtAlquiler
             // 
-            this.txtAlquiler.BackColor = System.Drawing.Color.Lime;
+            this.txtAlquiler.BackColor = System.Drawing.Color.White;
             this.txtAlquiler.Location = new System.Drawing.Point(117, 42);
             this.txtAlquiler.Name = "txtAlquiler";
             this.txtAlquiler.Size = new System.Drawing.Size(181, 23);
@@ -244,21 +248,21 @@
             this.label7.TabIndex = 11;
             this.label7.Text = "Comida $";
             // 
-            // groupBox2
+            // mrcIngresos
             // 
-            this.groupBox2.Controls.Add(this.label1);
-            this.groupBox2.Controls.Add(this.txtDeposito);
-            this.groupBox2.ForeColor = System.Drawing.Color.Blue;
-            this.groupBox2.Location = new System.Drawing.Point(40, 45);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(304, 100);
-            this.groupBox2.TabIndex = 17;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Ingresos";
+            this.mrcIngresos.Controls.Add(this.label1);
+            this.mrcIngresos.Controls.Add(this.txtDeposito);
+            this.mrcIngresos.ForeColor = System.Drawing.Color.Black;
+            this.mrcIngresos.Location = new System.Drawing.Point(40, 45);
+            this.mrcIngresos.Name = "mrcIngresos";
+            this.mrcIngresos.Size = new System.Drawing.Size(304, 100);
+            this.mrcIngresos.TabIndex = 17;
+            this.mrcIngresos.TabStop = false;
+            this.mrcIngresos.Text = "Ingresos";
             // 
             // txtDeposito
             // 
-            this.txtDeposito.BackColor = System.Drawing.Color.Lime;
+            this.txtDeposito.BackColor = System.Drawing.Color.White;
             this.txtDeposito.Location = new System.Drawing.Point(117, 47);
             this.txtDeposito.Name = "txtDeposito";
             this.txtDeposito.Size = new System.Drawing.Size(181, 23);
@@ -269,25 +273,25 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightYellow;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(478, 645);
-            this.Controls.Add(this.groupBox1);
+            this.ClientSize = new System.Drawing.Size(406, 584);
+            this.Controls.Add(this.mrcSaldo);
             this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.Color.Transparent;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "frmPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Gestion de Gastos Mensuales";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
+            this.mrcSaldo.ResumeLayout(false);
+            this.mrcSaldo.PerformLayout();
+            this.mrcGastosFijos.ResumeLayout(false);
+            this.mrcGastosFijos.PerformLayout();
+            this.mrcEgresos.ResumeLayout(false);
+            this.mrcEgresos.PerformLayout();
+            this.mrcIngresos.ResumeLayout(false);
+            this.mrcIngresos.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -301,17 +305,17 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label lblTotal;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox mrcSaldo;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtComida;
         private System.Windows.Forms.TextBox txtSalidas;
         private System.Windows.Forms.TextBox txtImpuestos;
         private System.Windows.Forms.TextBox txtAlquiler;
         private System.Windows.Forms.TextBox txtDeposito;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox mrcEgresos;
+        private System.Windows.Forms.GroupBox mrcIngresos;
         private System.Windows.Forms.Button cmdCancelar;
-        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.GroupBox mrcGastosFijos;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtGastoFijo;
     }
