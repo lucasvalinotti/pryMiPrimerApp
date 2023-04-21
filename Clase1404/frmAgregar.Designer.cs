@@ -32,11 +32,12 @@
             this.mrcAgregar = new System.Windows.Forms.GroupBox();
             this.cmdAgregar = new System.Windows.Forms.Button();
             this.lstCategoria = new System.Windows.Forms.ComboBox();
-            this.txtCantidad = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.nmcCantidad = new System.Windows.Forms.NumericUpDown();
             this.mrcAgregar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nmcCantidad)).BeginInit();
             this.SuspendLayout();
             // 
             // txtProducto
@@ -48,9 +49,9 @@
             // 
             // mrcAgregar
             // 
+            this.mrcAgregar.Controls.Add(this.nmcCantidad);
             this.mrcAgregar.Controls.Add(this.cmdAgregar);
             this.mrcAgregar.Controls.Add(this.lstCategoria);
-            this.mrcAgregar.Controls.Add(this.txtCantidad);
             this.mrcAgregar.Controls.Add(this.label3);
             this.mrcAgregar.Controls.Add(this.label2);
             this.mrcAgregar.Controls.Add(this.label1);
@@ -70,6 +71,7 @@
             this.cmdAgregar.TabIndex = 6;
             this.cmdAgregar.Text = "Agregar";
             this.cmdAgregar.UseVisualStyleBackColor = true;
+            this.cmdAgregar.Click += new System.EventHandler(this.cmdAgregar_Click);
             // 
             // lstCategoria
             // 
@@ -84,13 +86,6 @@
             this.lstCategoria.Name = "lstCategoria";
             this.lstCategoria.Size = new System.Drawing.Size(152, 21);
             this.lstCategoria.TabIndex = 5;
-            // 
-            // txtCantidad
-            // 
-            this.txtCantidad.Location = new System.Drawing.Point(108, 96);
-            this.txtCantidad.Name = "txtCantidad";
-            this.txtCantidad.Size = new System.Drawing.Size(152, 20);
-            this.txtCantidad.TabIndex = 4;
             // 
             // label3
             // 
@@ -119,6 +114,13 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Producto";
             // 
+            // nmcCantidad
+            // 
+            this.nmcCantidad.Location = new System.Drawing.Point(108, 97);
+            this.nmcCantidad.Name = "nmcCantidad";
+            this.nmcCantidad.Size = new System.Drawing.Size(152, 20);
+            this.nmcCantidad.TabIndex = 7;
+            // 
             // frmAgregar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -132,6 +134,7 @@
             this.Text = "Almacen";
             this.mrcAgregar.ResumeLayout(false);
             this.mrcAgregar.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nmcCantidad)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -141,10 +144,10 @@
         private System.Windows.Forms.TextBox txtProducto;
         private System.Windows.Forms.GroupBox mrcAgregar;
         private System.Windows.Forms.ComboBox lstCategoria;
-        private System.Windows.Forms.TextBox txtCantidad;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button cmdAgregar;
+        private System.Windows.Forms.NumericUpDown nmcCantidad;
     }
 }

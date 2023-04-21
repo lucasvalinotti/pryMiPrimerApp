@@ -16,5 +16,11 @@ namespace Clase1404
         {
             InitializeComponent();
         }
+
+        private void cmdAgregar_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Procuto agregado con Exito!", "Producto Agregado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            nmcCantidad.Value = 0; txtProducto.Clear();
+        }
     }
 }
