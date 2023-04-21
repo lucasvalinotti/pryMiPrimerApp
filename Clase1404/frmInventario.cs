@@ -46,5 +46,11 @@ namespace Clase1404
             frmListado lista = new frmListado("Baño");
             lista.ShowDialog();
         }
+
+        private void cmdVerTodo_Click(object sender, EventArgs e)
+        {
+            frmListado lista = new frmListado("Listado");
+            lista.ShowDialog();
+        }
     }
 }
