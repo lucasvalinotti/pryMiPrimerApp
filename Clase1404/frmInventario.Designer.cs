@@ -93,10 +93,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(79, 19);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Blue;
+            this.label1.Location = new System.Drawing.Point(12, 1);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(206, 42);
+            this.label1.Size = new System.Drawing.Size(349, 73);
             this.label1.TabIndex = 4;
             this.label1.Text = "ALMACEN";
             // 
@@ -127,11 +128,13 @@
             this.ClientSize = new System.Drawing.Size(371, 474);
             this.Controls.Add(this.cmdVerTodo);
             this.Controls.Add(this.cmdAgregar);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.cmdBano);
             this.Controls.Add(this.cmdFrio);
             this.Controls.Add(this.cmdLimpieza);
             this.Controls.Add(this.cmdComida);
+            this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "frmInventario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inventario";

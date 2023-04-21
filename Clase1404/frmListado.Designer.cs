@@ -83,6 +83,8 @@
             this.ClientSize = new System.Drawing.Size(476, 450);
             this.Controls.Add(this.cmdAgregar);
             this.Controls.Add(this.dataGridView1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "frmListado";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Listado";
