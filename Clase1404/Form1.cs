@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Clase1404
 {
-    public partial class frmPrincipal : Form
+    public partial class frmFinanzas : Form
     {
-        public frmPrincipal()
+        public frmFinanzas()
         {
             InitializeComponent();
         }

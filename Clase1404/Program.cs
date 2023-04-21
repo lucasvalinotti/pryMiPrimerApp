@@ -16,7 +16,7 @@ namespace Clase1404
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmInventario());
+            Application.Run(new frmPrincipal());
         }
     }
 }
