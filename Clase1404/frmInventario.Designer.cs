@@ -81,7 +81,7 @@
             // 
             this.cmdBano.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cmdBano.Image = ((System.Drawing.Image)(resources.GetObject("cmdBano.Image")));
-            this.cmdBano.Location = new System.Drawing.Point(187, 247);
+            this.cmdBano.Location = new System.Drawing.Point(187, 248);
             this.cmdBano.Name = "cmdBano";
             this.cmdBano.Size = new System.Drawing.Size(179, 164);
             this.cmdBano.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
