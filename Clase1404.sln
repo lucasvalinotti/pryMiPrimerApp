@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33414.496
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clase1404", "Clase1404\Clase1404.csproj", "{D03D3754-3F22-4454-8DB9-9CE708789165}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pryMiPrimerApp", "Clase1404\pryMiPrimerApp.csproj", "{D03D3754-3F22-4454-8DB9-9CE708789165}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
