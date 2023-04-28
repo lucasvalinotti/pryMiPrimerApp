@@ -7,7 +7,7 @@
     <ProjectGuid>{D03D3754-3F22-4454-8DB9-9CE708789165}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Clase1404</RootNamespace>
-    <AssemblyName>Clase1404</AssemblyName>
+    <AssemblyName>Gestion Personal</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>701599-49614-dolares-2520pixabay.ico</ApplicationIcon>
+    <ApplicationIcon>gestion.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -120,6 +120,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="701599-49614-dolares-2520pixabay.ico" />
+    <Content Include="gestion.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

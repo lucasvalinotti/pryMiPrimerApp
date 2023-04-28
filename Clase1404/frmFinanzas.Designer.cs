@@ -60,7 +60,7 @@
             this.cmdGrabar.BackColor = System.Drawing.Color.LightSteelBlue;
             this.cmdGrabar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cmdGrabar.ForeColor = System.Drawing.Color.Black;
-            this.cmdGrabar.Location = new System.Drawing.Point(57, 471);
+            this.cmdGrabar.Location = new System.Drawing.Point(35, 431);
             this.cmdGrabar.Name = "cmdGrabar";
             this.cmdGrabar.Size = new System.Drawing.Size(93, 33);
             this.cmdGrabar.TabIndex = 0;
@@ -109,7 +109,7 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(128, 535);
+            this.label5.Location = new System.Drawing.Point(106, 495);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(58, 19);
             this.label5.TabIndex = 9;
@@ -120,7 +120,7 @@
             this.lblTotal.AutoSize = true;
             this.lblTotal.BackColor = System.Drawing.Color.Transparent;
             this.lblTotal.ForeColor = System.Drawing.Color.Black;
-            this.lblTotal.Location = new System.Drawing.Point(199, 535);
+            this.lblTotal.Location = new System.Drawing.Point(177, 495);
             this.lblTotal.Name = "lblTotal";
             this.lblTotal.Size = new System.Drawing.Size(73, 19);
             this.lblTotal.TabIndex = 10;
@@ -140,7 +140,7 @@
             this.mrcSaldo.ForeColor = System.Drawing.Color.Black;
             this.mrcSaldo.Location = new System.Drawing.Point(12, 12);
             this.mrcSaldo.Name = "mrcSaldo";
-            this.mrcSaldo.Size = new System.Drawing.Size(382, 562);
+            this.mrcSaldo.Size = new System.Drawing.Size(324, 532);
             this.mrcSaldo.TabIndex = 11;
             this.mrcSaldo.TabStop = false;
             this.mrcSaldo.Text = "Saldo";
@@ -152,7 +152,7 @@
             this.mrcGastosFijos.Controls.Add(this.label6);
             this.mrcGastosFijos.Controls.Add(this.txtGastoFijo);
             this.mrcGastosFijos.ForeColor = System.Drawing.Color.Black;
-            this.mrcGastosFijos.Location = new System.Drawing.Point(40, 344);
+            this.mrcGastosFijos.Location = new System.Drawing.Point(9, 325);
             this.mrcGastosFijos.Name = "mrcGastosFijos";
             this.mrcGastosFijos.Size = new System.Drawing.Size(304, 100);
             this.mrcGastosFijos.TabIndex = 18;
@@ -175,18 +175,20 @@
             this.txtGastoFijo.Name = "txtGastoFijo";
             this.txtGastoFijo.Size = new System.Drawing.Size(181, 27);
             this.txtGastoFijo.TabIndex = 12;
+            this.txtGastoFijo.Text = "0";
             // 
             // cmdCancelar
             // 
             this.cmdCancelar.BackColor = System.Drawing.Color.LightSteelBlue;
             this.cmdCancelar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cmdCancelar.ForeColor = System.Drawing.Color.Black;
-            this.cmdCancelar.Location = new System.Drawing.Point(220, 471);
+            this.cmdCancelar.Location = new System.Drawing.Point(198, 431);
             this.cmdCancelar.Name = "cmdCancelar";
             this.cmdCancelar.Size = new System.Drawing.Size(93, 33);
             this.cmdCancelar.TabIndex = 19;
             this.cmdCancelar.Text = "Cancelar";
             this.cmdCancelar.UseVisualStyleBackColor = false;
+            this.cmdCancelar.Click += new System.EventHandler(this.cmdCancelar_Click);
             // 
             // mrcEgresos
             // 
@@ -200,7 +202,7 @@
             this.mrcEgresos.Controls.Add(this.txtAlquiler);
             this.mrcEgresos.Controls.Add(this.label7);
             this.mrcEgresos.ForeColor = System.Drawing.Color.Black;
-            this.mrcEgresos.Location = new System.Drawing.Point(40, 151);
+            this.mrcEgresos.Location = new System.Drawing.Point(9, 132);
             this.mrcEgresos.Name = "mrcEgresos";
             this.mrcEgresos.Size = new System.Drawing.Size(304, 187);
             this.mrcEgresos.TabIndex = 18;
@@ -214,6 +216,7 @@
             this.txtComida.Name = "txtComida";
             this.txtComida.Size = new System.Drawing.Size(181, 27);
             this.txtComida.TabIndex = 16;
+            this.txtComida.Text = "0";
             // 
             // txtSalidas
             // 
@@ -222,6 +225,7 @@
             this.txtSalidas.Name = "txtSalidas";
             this.txtSalidas.Size = new System.Drawing.Size(181, 27);
             this.txtSalidas.TabIndex = 15;
+            this.txtSalidas.Text = "0";
             // 
             // txtImpuestos
             // 
@@ -230,6 +234,7 @@
             this.txtImpuestos.Name = "txtImpuestos";
             this.txtImpuestos.Size = new System.Drawing.Size(181, 27);
             this.txtImpuestos.TabIndex = 14;
+            this.txtImpuestos.Text = "0";
             // 
             // txtAlquiler
             // 
@@ -238,6 +243,7 @@
             this.txtAlquiler.Name = "txtAlquiler";
             this.txtAlquiler.Size = new System.Drawing.Size(181, 27);
             this.txtAlquiler.TabIndex = 13;
+            this.txtAlquiler.Text = "0";
             // 
             // label7
             // 
@@ -253,7 +259,7 @@
             this.mrcIngresos.Controls.Add(this.label1);
             this.mrcIngresos.Controls.Add(this.txtDeposito);
             this.mrcIngresos.ForeColor = System.Drawing.Color.Black;
-            this.mrcIngresos.Location = new System.Drawing.Point(40, 45);
+            this.mrcIngresos.Location = new System.Drawing.Point(9, 26);
             this.mrcIngresos.Name = "mrcIngresos";
             this.mrcIngresos.Size = new System.Drawing.Size(304, 100);
             this.mrcIngresos.TabIndex = 17;
@@ -267,6 +273,7 @@
             this.txtDeposito.Name = "txtDeposito";
             this.txtDeposito.Size = new System.Drawing.Size(181, 27);
             this.txtDeposito.TabIndex = 12;
+            this.txtDeposito.Text = "0";
             // 
             // frmFinanzas
             // 
@@ -274,7 +281,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightYellow;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(406, 584);
+            this.ClientSize = new System.Drawing.Size(344, 553);
             this.Controls.Add(this.mrcSaldo);
             this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.Color.Transparent;

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPrincipal));
             this.cmdFinanzas = new System.Windows.Forms.Button();
             this.cmdAlmacen = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -72,6 +73,7 @@
             this.Controls.Add(this.cmdAlmacen);
             this.Controls.Add(this.cmdFinanzas);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "frmPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
