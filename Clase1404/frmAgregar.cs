@@ -12,6 +12,7 @@ namespace Clase1404
 {
     public partial class frmAgregar : Form
     {
+
         public frmAgregar()
         {
             InitializeComponent();

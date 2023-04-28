@@ -12,6 +12,7 @@ namespace Clase1404
 {
     public partial class frmFinanzas : Form
     {
+        decimal varDeposito = 0, varAlquiler = 0, varImpuestos = 0, varSalidas = 0, varComida = 0, varGastos = 0;
         public frmFinanzas()
         {
             InitializeComponent();
@@ -19,9 +20,13 @@ namespace Clase1404
 
         private void cmdGrabar_Click(object sender, EventArgs e)
         {
-            float total = float.Parse(txtDeposito.Text) - (float.Parse(txtAlquiler.Text) + float.Parse(txtImpuestos.Text) +
-                float.Parse(txtSalidas.Text) + float.Parse(txtComida.Text) + float.Parse(txtGastoFijo.Text));
-
+            varDeposito = decimal.Parse(txtDeposito.Text);
+            varAlquiler = decimal.Parse(txtAlquiler.Text);
+            varImpuestos = decimal.Parse(txtImpuestos.Text);
+            varSalidas = decimal.Parse(txtSalidas.Text);
+            varComida = decimal.Parse(txtComida.Text);
+            varGastos = decimal.Parse(txtGastoFijo.Text);
+            decimal total = varDeposito - varAlquiler - varImpuestos - varSalidas - varComida - varGastos;
             lblTotal.Text = total.ToString();
         }
     }
