@@ -174,7 +174,7 @@
             this.txtGastoFijo.Location = new System.Drawing.Point(117, 47);
             this.txtGastoFijo.Name = "txtGastoFijo";
             this.txtGastoFijo.Size = new System.Drawing.Size(181, 27);
-            this.txtGastoFijo.TabIndex = 12;
+            this.txtGastoFijo.TabIndex = 5;
             this.txtGastoFijo.Text = "0";
             // 
             // cmdCancelar
@@ -215,7 +215,7 @@
             this.txtComida.Location = new System.Drawing.Point(117, 143);
             this.txtComida.Name = "txtComida";
             this.txtComida.Size = new System.Drawing.Size(181, 27);
-            this.txtComida.TabIndex = 16;
+            this.txtComida.TabIndex = 4;
             this.txtComida.Text = "0";
             // 
             // txtSalidas
@@ -224,7 +224,7 @@
             this.txtSalidas.Location = new System.Drawing.Point(116, 112);
             this.txtSalidas.Name = "txtSalidas";
             this.txtSalidas.Size = new System.Drawing.Size(181, 27);
-            this.txtSalidas.TabIndex = 15;
+            this.txtSalidas.TabIndex = 3;
             this.txtSalidas.Text = "0";
             // 
             // txtImpuestos
@@ -233,16 +233,16 @@
             this.txtImpuestos.Location = new System.Drawing.Point(117, 77);
             this.txtImpuestos.Name = "txtImpuestos";
             this.txtImpuestos.Size = new System.Drawing.Size(181, 27);
-            this.txtImpuestos.TabIndex = 14;
+            this.txtImpuestos.TabIndex = 2;
             this.txtImpuestos.Text = "0";
             // 
             // txtAlquiler
             // 
             this.txtAlquiler.BackColor = System.Drawing.Color.White;
-            this.txtAlquiler.Location = new System.Drawing.Point(117, 42);
+            this.txtAlquiler.Location = new System.Drawing.Point(116, 42);
             this.txtAlquiler.Name = "txtAlquiler";
             this.txtAlquiler.Size = new System.Drawing.Size(181, 27);
-            this.txtAlquiler.TabIndex = 13;
+            this.txtAlquiler.TabIndex = 1;
             this.txtAlquiler.Text = "0";
             // 
             // label7
@@ -272,7 +272,7 @@
             this.txtDeposito.Location = new System.Drawing.Point(117, 47);
             this.txtDeposito.Name = "txtDeposito";
             this.txtDeposito.Size = new System.Drawing.Size(181, 27);
-            this.txtDeposito.TabIndex = 12;
+            this.txtDeposito.TabIndex = 0;
             this.txtDeposito.Text = "0";
             // 
             // frmFinanzas
@@ -281,7 +281,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightYellow;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(344, 553);
+            this.ClientSize = new System.Drawing.Size(350, 553);
             this.Controls.Add(this.mrcSaldo);
             this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.Color.Transparent;

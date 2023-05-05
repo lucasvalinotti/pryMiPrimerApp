@@ -37,6 +37,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.chkCaduca = new System.Windows.Forms.CheckBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.dtpVencimiento = new System.Windows.Forms.DateTimePicker();
             this.mrcAgregar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nmcCantidad)).BeginInit();
             this.SuspendLayout();
@@ -45,11 +48,14 @@
             // 
             this.txtProducto.Location = new System.Drawing.Point(108, 43);
             this.txtProducto.Name = "txtProducto";
-            this.txtProducto.Size = new System.Drawing.Size(152, 20);
+            this.txtProducto.Size = new System.Drawing.Size(212, 20);
             this.txtProducto.TabIndex = 0;
             // 
             // mrcAgregar
             // 
+            this.mrcAgregar.Controls.Add(this.dtpVencimiento);
+            this.mrcAgregar.Controls.Add(this.label4);
+            this.mrcAgregar.Controls.Add(this.chkCaduca);
             this.mrcAgregar.Controls.Add(this.nmcCantidad);
             this.mrcAgregar.Controls.Add(this.cmdAgregar);
             this.mrcAgregar.Controls.Add(this.lstCategoria);
@@ -59,7 +65,7 @@
             this.mrcAgregar.Controls.Add(this.txtProducto);
             this.mrcAgregar.Location = new System.Drawing.Point(12, 12);
             this.mrcAgregar.Name = "mrcAgregar";
-            this.mrcAgregar.Size = new System.Drawing.Size(271, 161);
+            this.mrcAgregar.Size = new System.Drawing.Size(326, 242);
             this.mrcAgregar.TabIndex = 1;
             this.mrcAgregar.TabStop = false;
             this.mrcAgregar.Text = "Agregar";
@@ -68,12 +74,12 @@
             // 
             this.nmcCantidad.Location = new System.Drawing.Point(108, 97);
             this.nmcCantidad.Name = "nmcCantidad";
-            this.nmcCantidad.Size = new System.Drawing.Size(152, 20);
+            this.nmcCantidad.Size = new System.Drawing.Size(212, 20);
             this.nmcCantidad.TabIndex = 7;
             // 
             // cmdAgregar
             // 
-            this.cmdAgregar.Location = new System.Drawing.Point(91, 122);
+            this.cmdAgregar.Location = new System.Drawing.Point(127, 200);
             this.cmdAgregar.Name = "cmdAgregar";
             this.cmdAgregar.Size = new System.Drawing.Size(75, 23);
             this.cmdAgregar.TabIndex = 6;
@@ -92,7 +98,7 @@
             "Baño"});
             this.lstCategoria.Location = new System.Drawing.Point(108, 69);
             this.lstCategoria.Name = "lstCategoria";
-            this.lstCategoria.Size = new System.Drawing.Size(152, 21);
+            this.lstCategoria.Size = new System.Drawing.Size(212, 21);
             this.lstCategoria.TabIndex = 5;
             // 
             // label3
@@ -122,11 +128,39 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Producto";
             // 
+            // chkCaduca
+            // 
+            this.chkCaduca.AutoSize = true;
+            this.chkCaduca.Location = new System.Drawing.Point(108, 133);
+            this.chkCaduca.Name = "chkCaduca";
+            this.chkCaduca.Size = new System.Drawing.Size(63, 17);
+            this.chkCaduca.TabIndex = 8;
+            this.chkCaduca.Text = "Caduca";
+            this.chkCaduca.UseVisualStyleBackColor = true;
+            this.chkCaduca.CheckedChanged += new System.EventHandler(this.chkCaduca_CheckedChanged);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(13, 161);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(65, 13);
+            this.label4.TabIndex = 11;
+            this.label4.Text = "Vencimiento";
+            // 
+            // dtpVencimiento
+            // 
+            this.dtpVencimiento.Enabled = false;
+            this.dtpVencimiento.Location = new System.Drawing.Point(108, 161);
+            this.dtpVencimiento.Name = "dtpVencimiento";
+            this.dtpVencimiento.Size = new System.Drawing.Size(212, 20);
+            this.dtpVencimiento.TabIndex = 12;
+            // 
             // frmAgregar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(297, 182);
+            this.ClientSize = new System.Drawing.Size(349, 264);
             this.Controls.Add(this.mrcAgregar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -134,6 +168,7 @@
             this.Name = "frmAgregar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Almacen";
+            this.Load += new System.EventHandler(this.frmAgregar_Load);
             this.mrcAgregar.ResumeLayout(false);
             this.mrcAgregar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nmcCantidad)).EndInit();
@@ -151,5 +186,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button cmdAgregar;
         private System.Windows.Forms.NumericUpDown nmcCantidad;
+        private System.Windows.Forms.DateTimePicker dtpVencimiento;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.CheckBox chkCaduca;
     }
 }
