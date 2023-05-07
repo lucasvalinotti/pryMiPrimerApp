@@ -31,15 +31,15 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAgregar));
             this.txtProducto = new System.Windows.Forms.TextBox();
             this.mrcAgregar = new System.Windows.Forms.GroupBox();
+            this.dtpVencimiento = new System.Windows.Forms.DateTimePicker();
+            this.lblVencimiento = new System.Windows.Forms.Label();
+            this.chkCaduca = new System.Windows.Forms.CheckBox();
             this.nmcCantidad = new System.Windows.Forms.NumericUpDown();
             this.cmdAgregar = new System.Windows.Forms.Button();
             this.lstCategoria = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.chkCaduca = new System.Windows.Forms.CheckBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.dtpVencimiento = new System.Windows.Forms.DateTimePicker();
+            this.lblCantidad = new System.Windows.Forms.Label();
+            this.lblCategoria = new System.Windows.Forms.Label();
+            this.lblProducto = new System.Windows.Forms.Label();
             this.mrcAgregar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nmcCantidad)).BeginInit();
             this.SuspendLayout();
@@ -54,14 +54,14 @@
             // mrcAgregar
             // 
             this.mrcAgregar.Controls.Add(this.dtpVencimiento);
-            this.mrcAgregar.Controls.Add(this.label4);
+            this.mrcAgregar.Controls.Add(this.lblVencimiento);
             this.mrcAgregar.Controls.Add(this.chkCaduca);
             this.mrcAgregar.Controls.Add(this.nmcCantidad);
             this.mrcAgregar.Controls.Add(this.cmdAgregar);
             this.mrcAgregar.Controls.Add(this.lstCategoria);
-            this.mrcAgregar.Controls.Add(this.label3);
-            this.mrcAgregar.Controls.Add(this.label2);
-            this.mrcAgregar.Controls.Add(this.label1);
+            this.mrcAgregar.Controls.Add(this.lblCantidad);
+            this.mrcAgregar.Controls.Add(this.lblCategoria);
+            this.mrcAgregar.Controls.Add(this.lblProducto);
             this.mrcAgregar.Controls.Add(this.txtProducto);
             this.mrcAgregar.Location = new System.Drawing.Point(12, 12);
             this.mrcAgregar.Name = "mrcAgregar";
@@ -69,6 +69,34 @@
             this.mrcAgregar.TabIndex = 1;
             this.mrcAgregar.TabStop = false;
             this.mrcAgregar.Text = "Agregar";
+            // 
+            // dtpVencimiento
+            // 
+            this.dtpVencimiento.Enabled = false;
+            this.dtpVencimiento.Location = new System.Drawing.Point(108, 161);
+            this.dtpVencimiento.Name = "dtpVencimiento";
+            this.dtpVencimiento.Size = new System.Drawing.Size(212, 20);
+            this.dtpVencimiento.TabIndex = 12;
+            // 
+            // lblVencimiento
+            // 
+            this.lblVencimiento.AutoSize = true;
+            this.lblVencimiento.Location = new System.Drawing.Point(13, 161);
+            this.lblVencimiento.Name = "lblVencimiento";
+            this.lblVencimiento.Size = new System.Drawing.Size(65, 13);
+            this.lblVencimiento.TabIndex = 11;
+            this.lblVencimiento.Text = "Vencimiento";
+            // 
+            // chkCaduca
+            // 
+            this.chkCaduca.AutoSize = true;
+            this.chkCaduca.Location = new System.Drawing.Point(108, 133);
+            this.chkCaduca.Name = "chkCaduca";
+            this.chkCaduca.Size = new System.Drawing.Size(63, 17);
+            this.chkCaduca.TabIndex = 8;
+            this.chkCaduca.Text = "Caduca";
+            this.chkCaduca.UseVisualStyleBackColor = true;
+            this.chkCaduca.CheckedChanged += new System.EventHandler(this.chkCaduca_CheckedChanged);
             // 
             // nmcCantidad
             // 
@@ -101,60 +129,32 @@
             this.lstCategoria.Size = new System.Drawing.Size(212, 21);
             this.lstCategoria.TabIndex = 5;
             // 
-            // label3
+            // lblCantidad
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(29, 99);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(49, 13);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Cantidad";
+            this.lblCantidad.AutoSize = true;
+            this.lblCantidad.Location = new System.Drawing.Point(29, 99);
+            this.lblCantidad.Name = "lblCantidad";
+            this.lblCantidad.Size = new System.Drawing.Size(49, 13);
+            this.lblCantidad.TabIndex = 3;
+            this.lblCantidad.Text = "Cantidad";
             // 
-            // label2
+            // lblCategoria
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(26, 72);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(52, 13);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Categoria";
+            this.lblCategoria.AutoSize = true;
+            this.lblCategoria.Location = new System.Drawing.Point(26, 72);
+            this.lblCategoria.Name = "lblCategoria";
+            this.lblCategoria.Size = new System.Drawing.Size(52, 13);
+            this.lblCategoria.TabIndex = 2;
+            this.lblCategoria.Text = "Categoria";
             // 
-            // label1
+            // lblProducto
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(26, 46);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(50, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Producto";
-            // 
-            // chkCaduca
-            // 
-            this.chkCaduca.AutoSize = true;
-            this.chkCaduca.Location = new System.Drawing.Point(108, 133);
-            this.chkCaduca.Name = "chkCaduca";
-            this.chkCaduca.Size = new System.Drawing.Size(63, 17);
-            this.chkCaduca.TabIndex = 8;
-            this.chkCaduca.Text = "Caduca";
-            this.chkCaduca.UseVisualStyleBackColor = true;
-            this.chkCaduca.CheckedChanged += new System.EventHandler(this.chkCaduca_CheckedChanged);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(13, 161);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(65, 13);
-            this.label4.TabIndex = 11;
-            this.label4.Text = "Vencimiento";
-            // 
-            // dtpVencimiento
-            // 
-            this.dtpVencimiento.Enabled = false;
-            this.dtpVencimiento.Location = new System.Drawing.Point(108, 161);
-            this.dtpVencimiento.Name = "dtpVencimiento";
-            this.dtpVencimiento.Size = new System.Drawing.Size(212, 20);
-            this.dtpVencimiento.TabIndex = 12;
+            this.lblProducto.AutoSize = true;
+            this.lblProducto.Location = new System.Drawing.Point(26, 46);
+            this.lblProducto.Name = "lblProducto";
+            this.lblProducto.Size = new System.Drawing.Size(50, 13);
+            this.lblProducto.TabIndex = 1;
+            this.lblProducto.Text = "Producto";
             // 
             // frmAgregar
             // 
@@ -181,13 +181,13 @@
         private System.Windows.Forms.TextBox txtProducto;
         private System.Windows.Forms.GroupBox mrcAgregar;
         private System.Windows.Forms.ComboBox lstCategoria;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblCantidad;
+        private System.Windows.Forms.Label lblCategoria;
+        private System.Windows.Forms.Label lblProducto;
         private System.Windows.Forms.Button cmdAgregar;
         private System.Windows.Forms.NumericUpDown nmcCantidad;
         private System.Windows.Forms.DateTimePicker dtpVencimiento;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblVencimiento;
         private System.Windows.Forms.CheckBox chkCaduca;
     }
 }

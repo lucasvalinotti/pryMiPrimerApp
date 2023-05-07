@@ -14,7 +14,6 @@ namespace Clase1404
     public partial class frmListado : Form
     {
         public List<Producto> productos = new List<Producto>();
-        Producto producto;
         string titulo;
 
         public frmListado(string encabezado)
@@ -26,20 +25,40 @@ namespace Clase1404
         private void frmListado_Load(object sender, EventArgs e)
         {
             this.Text = titulo;
+            dgvProductos.Columns.Add("Producto", "Producto");
+            dgvProductos.Columns.Add("Categoria", "Categoria");
+            dgvProductos.Columns.Add("Cantidad", "Cantidad");
+            dgvProductos.Columns.Add("Caduca", "Caduca");
+            dgvProductos.Columns.Add("Vencimiento", "Vencimiento");
         }
 
         private void cmdAgregar_Click(object sender, EventArgs e)
         {
-            frmAgregar agregar = new frmAgregar();
-            agregar.ShowDialog();
+            
+            Producto producto = new Producto(txtProducto.Text, lstCategoria.Text, nmcCantidad.Value, "Caduca", dtpVencimiento.Value.ToString("dd/MM/yyyy"));
+            if (chkCaduca.Checked == false)
+            {
+                producto.Caduca = "No";
+                producto.fechaVencimiento = "--/--/--";
+            }
+            else
+            {
+                producto.Caduca = "Si";
+            }
+            //productos.Add(producto);
+            dgvProductos.Rows.Add(producto.Nombre, producto.Tipo, producto.Cantidad, producto.Caduca, producto.fechaVencimiento);
         }
 
-        private void cmdActualizar_Click(object sender, EventArgs e)
+        private void chkCaduca_CheckedChanged(object sender, EventArgs e)
         {
-            frmAgregar agg = new frmAgregar();
-            productos.Add(producto);
-            MessageBox.Show(productos.Count().ToString());
-            dgvProductos.DataSource = productos;
+            if (chkCaduca.Checked == true)
+            {
+                dtpVencimiento.Enabled = true;
+            }
+            else
+            {
+                dtpVencimiento.Enabled=false;
+            }
         }
     }
 }

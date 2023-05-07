@@ -22,7 +22,7 @@ namespace Clase1404
         private void cmdAgregar_Click(object sender, EventArgs e)
         {
 
-            producto = new Producto(txtProducto.Text, lstCategoria.Text, nmcCantidad.Value, chkCaduca.Checked, dtpVencimiento.Value);
+            //producto = new Producto(txtProducto.Text, lstCategoria.Text, nmcCantidad.Value, chkCaduca.Checked, dtpVencimiento.Value);
 
 
             frmListado listado = new frmListado("");

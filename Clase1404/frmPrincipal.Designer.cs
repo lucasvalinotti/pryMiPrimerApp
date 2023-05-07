@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPrincipal));
             this.cmdFinanzas = new System.Windows.Forms.Button();
             this.cmdAlmacen = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblTitulo = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // cmdFinanzas
@@ -54,22 +54,22 @@
             this.cmdAlmacen.UseVisualStyleBackColor = true;
             this.cmdAlmacen.Click += new System.EventHandler(this.cmdAlmacen_Click);
             // 
-            // label1
+            // lblTitulo
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(97, 55);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(239, 33);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Gestion Personal";
+            this.lblTitulo.AutoSize = true;
+            this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo.Location = new System.Drawing.Point(97, 55);
+            this.lblTitulo.Name = "lblTitulo";
+            this.lblTitulo.Size = new System.Drawing.Size(239, 33);
+            this.lblTitulo.TabIndex = 2;
+            this.lblTitulo.Text = "Gestion Personal";
             // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(429, 450);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblTitulo);
             this.Controls.Add(this.cmdAlmacen);
             this.Controls.Add(this.cmdFinanzas);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -87,6 +87,6 @@
 
         private System.Windows.Forms.Button cmdFinanzas;
         private System.Windows.Forms.Button cmdAlmacen;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblTitulo;
     }
 }

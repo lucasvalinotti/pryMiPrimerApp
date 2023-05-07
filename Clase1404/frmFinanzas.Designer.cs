@@ -30,15 +30,15 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmFinanzas));
             this.cmdGrabar = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lblDeposito = new System.Windows.Forms.Label();
+            this.lblAlquiler = new System.Windows.Forms.Label();
+            this.lblImpuestos = new System.Windows.Forms.Label();
+            this.lblSalidas = new System.Windows.Forms.Label();
+            this.lblTotalTitulo = new System.Windows.Forms.Label();
             this.lblTotal = new System.Windows.Forms.Label();
             this.mrcSaldo = new System.Windows.Forms.GroupBox();
             this.mrcGastosFijos = new System.Windows.Forms.GroupBox();
-            this.label6 = new System.Windows.Forms.Label();
+            this.lblGastos = new System.Windows.Forms.Label();
             this.txtGastoFijo = new System.Windows.Forms.TextBox();
             this.cmdCancelar = new System.Windows.Forms.Button();
             this.mrcEgresos = new System.Windows.Forms.GroupBox();
@@ -46,7 +46,7 @@
             this.txtSalidas = new System.Windows.Forms.TextBox();
             this.txtImpuestos = new System.Windows.Forms.TextBox();
             this.txtAlquiler = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
+            this.lblComida = new System.Windows.Forms.Label();
             this.mrcIngresos = new System.Windows.Forms.GroupBox();
             this.txtDeposito = new System.Windows.Forms.TextBox();
             this.mrcSaldo.SuspendLayout();
@@ -68,52 +68,52 @@
             this.cmdGrabar.UseVisualStyleBackColor = false;
             this.cmdGrabar.Click += new System.EventHandler(this.cmdGrabar_Click);
             // 
-            // label1
+            // lblDeposito
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(17, 50);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(88, 19);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Deposito $";
+            this.lblDeposito.AutoSize = true;
+            this.lblDeposito.Location = new System.Drawing.Point(17, 50);
+            this.lblDeposito.Name = "lblDeposito";
+            this.lblDeposito.Size = new System.Drawing.Size(88, 19);
+            this.lblDeposito.TabIndex = 2;
+            this.lblDeposito.Text = "Deposito $";
             // 
-            // label2
+            // lblAlquiler
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(21, 45);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(82, 19);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Alquiler $";
+            this.lblAlquiler.AutoSize = true;
+            this.lblAlquiler.Location = new System.Drawing.Point(21, 45);
+            this.lblAlquiler.Name = "lblAlquiler";
+            this.lblAlquiler.Size = new System.Drawing.Size(82, 19);
+            this.lblAlquiler.TabIndex = 3;
+            this.lblAlquiler.Text = "Alquiler $";
             // 
-            // label3
+            // lblImpuestos
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(8, 80);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(99, 19);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Impuestos $";
+            this.lblImpuestos.AutoSize = true;
+            this.lblImpuestos.Location = new System.Drawing.Point(8, 80);
+            this.lblImpuestos.Name = "lblImpuestos";
+            this.lblImpuestos.Size = new System.Drawing.Size(99, 19);
+            this.lblImpuestos.TabIndex = 4;
+            this.lblImpuestos.Text = "Impuestos $";
             // 
-            // label4
+            // lblSalidas
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(29, 115);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(77, 19);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Salidas $";
+            this.lblSalidas.AutoSize = true;
+            this.lblSalidas.Location = new System.Drawing.Point(29, 115);
+            this.lblSalidas.Name = "lblSalidas";
+            this.lblSalidas.Size = new System.Drawing.Size(77, 19);
+            this.lblSalidas.TabIndex = 7;
+            this.lblSalidas.Text = "Salidas $";
             // 
-            // label5
+            // lblTotalTitulo
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(106, 495);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(58, 19);
-            this.label5.TabIndex = 9;
-            this.label5.Text = "Total $";
+            this.lblTotalTitulo.AutoSize = true;
+            this.lblTotalTitulo.BackColor = System.Drawing.Color.Transparent;
+            this.lblTotalTitulo.ForeColor = System.Drawing.Color.Black;
+            this.lblTotalTitulo.Location = new System.Drawing.Point(106, 495);
+            this.lblTotalTitulo.Name = "lblTotalTitulo";
+            this.lblTotalTitulo.Size = new System.Drawing.Size(58, 19);
+            this.lblTotalTitulo.TabIndex = 9;
+            this.lblTotalTitulo.Text = "Total $";
             // 
             // lblTotal
             // 
@@ -135,7 +135,7 @@
             this.mrcSaldo.Controls.Add(this.lblTotal);
             this.mrcSaldo.Controls.Add(this.mrcIngresos);
             this.mrcSaldo.Controls.Add(this.cmdGrabar);
-            this.mrcSaldo.Controls.Add(this.label5);
+            this.mrcSaldo.Controls.Add(this.lblTotalTitulo);
             this.mrcSaldo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mrcSaldo.ForeColor = System.Drawing.Color.Black;
             this.mrcSaldo.Location = new System.Drawing.Point(12, 12);
@@ -149,7 +149,7 @@
             // 
             this.mrcGastosFijos.BackColor = System.Drawing.Color.Transparent;
             this.mrcGastosFijos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.mrcGastosFijos.Controls.Add(this.label6);
+            this.mrcGastosFijos.Controls.Add(this.lblGastos);
             this.mrcGastosFijos.Controls.Add(this.txtGastoFijo);
             this.mrcGastosFijos.ForeColor = System.Drawing.Color.Black;
             this.mrcGastosFijos.Location = new System.Drawing.Point(9, 325);
@@ -159,14 +159,14 @@
             this.mrcGastosFijos.TabStop = false;
             this.mrcGastosFijos.Text = "Gastos fijos";
             // 
-            // label6
+            // lblGastos
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(33, 50);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(72, 19);
-            this.label6.TabIndex = 2;
-            this.label6.Text = "Gastos $";
+            this.lblGastos.AutoSize = true;
+            this.lblGastos.Location = new System.Drawing.Point(33, 50);
+            this.lblGastos.Name = "lblGastos";
+            this.lblGastos.Size = new System.Drawing.Size(72, 19);
+            this.lblGastos.TabIndex = 2;
+            this.lblGastos.Text = "Gastos $";
             // 
             // txtGastoFijo
             // 
@@ -194,13 +194,13 @@
             // 
             this.mrcEgresos.BackColor = System.Drawing.Color.Transparent;
             this.mrcEgresos.Controls.Add(this.txtComida);
-            this.mrcEgresos.Controls.Add(this.label2);
+            this.mrcEgresos.Controls.Add(this.lblAlquiler);
             this.mrcEgresos.Controls.Add(this.txtSalidas);
-            this.mrcEgresos.Controls.Add(this.label3);
+            this.mrcEgresos.Controls.Add(this.lblImpuestos);
             this.mrcEgresos.Controls.Add(this.txtImpuestos);
-            this.mrcEgresos.Controls.Add(this.label4);
+            this.mrcEgresos.Controls.Add(this.lblSalidas);
             this.mrcEgresos.Controls.Add(this.txtAlquiler);
-            this.mrcEgresos.Controls.Add(this.label7);
+            this.mrcEgresos.Controls.Add(this.lblComida);
             this.mrcEgresos.ForeColor = System.Drawing.Color.Black;
             this.mrcEgresos.Location = new System.Drawing.Point(9, 132);
             this.mrcEgresos.Name = "mrcEgresos";
@@ -245,18 +245,18 @@
             this.txtAlquiler.TabIndex = 1;
             this.txtAlquiler.Text = "0";
             // 
-            // label7
+            // lblComida
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(28, 146);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(86, 19);
-            this.label7.TabIndex = 11;
-            this.label7.Text = "Comida $";
+            this.lblComida.AutoSize = true;
+            this.lblComida.Location = new System.Drawing.Point(28, 146);
+            this.lblComida.Name = "lblComida";
+            this.lblComida.Size = new System.Drawing.Size(86, 19);
+            this.lblComida.TabIndex = 11;
+            this.lblComida.Text = "Comida $";
             // 
             // mrcIngresos
             // 
-            this.mrcIngresos.Controls.Add(this.label1);
+            this.mrcIngresos.Controls.Add(this.lblDeposito);
             this.mrcIngresos.Controls.Add(this.txtDeposito);
             this.mrcIngresos.ForeColor = System.Drawing.Color.Black;
             this.mrcIngresos.Location = new System.Drawing.Point(9, 26);
@@ -306,14 +306,14 @@
         #endregion
 
         private System.Windows.Forms.Button cmdGrabar;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lblDeposito;
+        private System.Windows.Forms.Label lblAlquiler;
+        private System.Windows.Forms.Label lblImpuestos;
+        private System.Windows.Forms.Label lblSalidas;
+        private System.Windows.Forms.Label lblTotalTitulo;
         private System.Windows.Forms.Label lblTotal;
         private System.Windows.Forms.GroupBox mrcSaldo;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lblComida;
         private System.Windows.Forms.TextBox txtComida;
         private System.Windows.Forms.TextBox txtSalidas;
         private System.Windows.Forms.TextBox txtImpuestos;
@@ -323,7 +323,7 @@
         private System.Windows.Forms.GroupBox mrcIngresos;
         private System.Windows.Forms.Button cmdCancelar;
         private System.Windows.Forms.GroupBox mrcGastosFijos;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lblGastos;
         private System.Windows.Forms.TextBox txtGastoFijo;
     }
 }

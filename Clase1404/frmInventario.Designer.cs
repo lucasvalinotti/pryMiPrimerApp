@@ -33,8 +33,7 @@
             this.cmdLimpieza = new System.Windows.Forms.PictureBox();
             this.cmdFrio = new System.Windows.Forms.PictureBox();
             this.cmdBano = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.cmdAgregar = new System.Windows.Forms.Button();
+            this.lblTitulo = new System.Windows.Forms.Label();
             this.cmdVerTodo = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.cmdComida)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmdLimpieza)).BeginInit();
@@ -90,26 +89,16 @@
             this.cmdBano.TabStop = false;
             this.cmdBano.Click += new System.EventHandler(this.cmdBano_Click);
             // 
-            // label1
+            // lblTitulo
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Blue;
-            this.label1.Location = new System.Drawing.Point(12, 1);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(349, 73);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "ALMACEN";
-            // 
-            // cmdAgregar
-            // 
-            this.cmdAgregar.Location = new System.Drawing.Point(147, 446);
-            this.cmdAgregar.Name = "cmdAgregar";
-            this.cmdAgregar.Size = new System.Drawing.Size(75, 23);
-            this.cmdAgregar.TabIndex = 5;
-            this.cmdAgregar.Text = "Agregar";
-            this.cmdAgregar.UseVisualStyleBackColor = true;
-            this.cmdAgregar.Click += new System.EventHandler(this.cmdAgregar_Click);
+            this.lblTitulo.AutoSize = true;
+            this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo.ForeColor = System.Drawing.Color.Blue;
+            this.lblTitulo.Location = new System.Drawing.Point(12, 1);
+            this.lblTitulo.Name = "lblTitulo";
+            this.lblTitulo.Size = new System.Drawing.Size(349, 73);
+            this.lblTitulo.TabIndex = 4;
+            this.lblTitulo.Text = "ALMACEN";
             // 
             // cmdVerTodo
             // 
@@ -125,14 +114,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(371, 474);
+            this.ClientSize = new System.Drawing.Size(371, 448);
             this.Controls.Add(this.cmdVerTodo);
-            this.Controls.Add(this.cmdAgregar);
             this.Controls.Add(this.cmdBano);
             this.Controls.Add(this.cmdFrio);
             this.Controls.Add(this.cmdLimpieza);
             this.Controls.Add(this.cmdComida);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblTitulo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -154,8 +142,7 @@
         private System.Windows.Forms.PictureBox cmdLimpieza;
         private System.Windows.Forms.PictureBox cmdFrio;
         private System.Windows.Forms.PictureBox cmdBano;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button cmdAgregar;
+        private System.Windows.Forms.Label lblTitulo;
         private System.Windows.Forms.Button cmdVerTodo;
     }
 }

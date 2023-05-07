@@ -17,12 +17,6 @@ namespace Clase1404
             InitializeComponent();
         }
 
-        private void cmdAgregar_Click(object sender, EventArgs e)
-        {
-            frmAgregar agregar = new frmAgregar();
-            agregar.ShowDialog();
-        }
-
         private void cmdComida_Click(object sender, EventArgs e)
         {
             frmListado lista = new frmListado("Comida");
